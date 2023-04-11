@@ -1,35 +1,35 @@
 const quiz = [
     {
-        question:"Q1. What is your name?",
-        a: "BK",
-        b:"M",
-        c:"bo",
-        d:"P",
+        question:"Q1. If 1=3, 2=3, 3=5, 4=4, 5=4, Then 6=?",
+        a: "4",
+        b:"5",
+        c:"3",
+        d:"2",
         ans:"ans3"
     },
     {
-        question:"Q2. What is your 2nd name?",
-        a: "B",
-        b:"M",
-        c:"bdo",
-        d:"Pa",
+        question:"Q2. Which number is equivalent to 3^(4)÷3^(2)",
+        a: "9",
+        b:"7",
+        c:"0",
+        d:"None of the above",
+        ans:"ans1"
+    },
+    {
+        question:"Q3. There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?",
+        a: "13",
+        b:"6.5",
+        c:"42.5",
+        d:"Don't give up!",
         ans:"ans3"
     },
     {
-        question:"Q3. What is your 3rd name?",
-        a: "BK",
-        b:"M",
-        c:"hdo",
-        d:"ya",
-        ans:"ans3"
-    },
-    {
-        question:"Q4. What is your 4th name?",
-        a: "K",
-        b:"C",
-        c:"bo",
-        d:"Pa",
-        ans:"ans3"
+        question:"Q4. There is a three-digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number?",
+        a: "741",
+        b:"241",
+        c:"182",
+        d:"141",
+        ans:"ans4"
     }
 ];
 

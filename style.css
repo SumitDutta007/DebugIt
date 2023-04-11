@@ -99,11 +99,11 @@
 {
     
     0%,100%{
-        top: 55vh;
+        top: 45vh;
         right: 140vh;
     }
     50%{
-        top: 55vh;
+        top: 45vh;
         right: 150vh;
     }
 }
@@ -112,13 +112,23 @@
 }
 #ready h1{
     position: absolute;
-    top: 35vh;
-    left: 75vh;
+    top: 25vh;
+    left: 35vh;
     font-family:'Dancing Script', cursive;
     font-weight: 900;
     font-size: 5rem;
     color: rgb(255, 255, 255);
 }
+#ready h2{
+    position: absolute;
+    top: 40vh;
+    left: 65vh;
+  /*  font-family:'Dancing Script', cursive;*/
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(38, 0, 255);
+}
+
 #startButton{
     position: absolute;
     top: 50vh;

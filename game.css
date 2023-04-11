@@ -20,20 +20,20 @@
     background-size: cover;
     position: absolute;
     height: 23vh;
-    width: 30vh;
+    width: 33vh;
     top: 2vh;
     right: 2vh;
-    animation: fishanimate1 25s infinite;
-    animation-delay: 4s;
+    animation: fishanimate1 30s infinite;
+    animation-delay: 2s;
 }
 .fish2{
-    background : url(Img/fish2.png);
+    background : url(Img/magikarp.png);
     background-size: cover;
     position: absolute;
-    height: 20vh;
-    width: 38vh;
+    height: 45vh;
+    width: 50vh;
 
-    animation: fishanimate2 25s infinite;
+    animation: fishanimate2 25s ease-in infinite;
 }
 .bubble1{
     background: url(Img/bubble1.png);
@@ -99,12 +99,24 @@
 {
     
     0%{
-        top: 65vh;
+        top: 55vh;
         right: 0vh;
     }
+    20%{
+        top: 45vh;
+    }
+    40%{
+        top: 55vh;
+    }
+    60%{
+        top: 45vh;
+    }
+    80%{
+        top: 55vh;
+    }
     100%{
-        top: 65vh;
-        right: 203vh;
+        top: 45vh;
+        right: 200vh;
     }
 }
 
@@ -115,7 +127,7 @@
     padding: 2vh 6vh;
     top: 20vh;
     left: 40vh;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: rgba(0, 255, 242, 0.225);
     border-radius: 8vh;
 }
