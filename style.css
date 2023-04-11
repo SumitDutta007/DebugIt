@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+}
+.sea{
+    display: block;
+    position: relative;
+    background: url(Img/sea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+}
+.fish1{
+    background : url(Img/fish3.png);
+    background-size: cover;
+    position: absolute;
+    height: 23vh;
+    width: 30vh;
+    top: 2vh;
+    right: 2vh;
+    animation: fishanimate1 25s infinite;
+    animation-delay: 4s;
+}
+.fish2{
+    background : url(Img/fish2.png);
+    background-size: cover;
+    position: absolute;
+    height: 20vh;
+    width: 38vh;
+  /*  top: 65vh;
+    right: 2vh;*/
+    animation: fishanimate2 25s infinite;
+}
+.bubble1{
+    background: url(Img/bubble1.png);
+    background-size: cover;
+    position: absolute;
+    height: 21vh;
+    width: 22.4vh;
+    top: 0;
+    left: 40vh;
+    opacity: 0.6;
+    animation: bubbleanimate1 20s infinite;
+}
+.bubble2{
+    background: url(Img/bubble2.png);
+    background-size: cover;
+    position: absolute;
+    height: 23.5vh;
+    width: 25vh;
+    top: 0;
+    right: 22vh;
+    opacity: 0.8;
+    animation: bubbleanimate2 20s infinite;
+}
+
+
+@keyframes bubbleanimate1
+{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 76vh;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@keyframes bubbleanimate2
+{
+    0%{
+        top: 76vh;
+    }
+    50%{
+        top: 0;
+    }
+    100%{
+        top: 76vh;
+    }
+   
+}
+
+@keyframes fishanimate1
+{
+    0%{
+        right: 0vh;
+    }
+    100%{
+        right: 203vh;
+        top: 30vh;
+    }
+}
+@keyframes fishanimate2
+{
+    
+    0%{
+        top: 65vh;
+        right: 0vh;
+    }
+    100%{
+        top: 65vh;
+        right: 203vh;
+    }
+}
+.ready{
+    display: none;
+}
+.ready h1{
+    position: absolute;
+    top: 35vh;
+    left: 75vh;
+    font-family:'Dancing Script', cursive;
+    font-weight: 900;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+}
+.btn{
+    position: absolute;
+    top: 50vh;
+    left: 90vh;
+    height: 9vh;
+    width: 30vh;
+    box-shadow: inset 0 0 40px rgb(13, 0, 255);
+    border:rgb(47,224,255);
+    border-radius: 10vh;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6vh;
+    font-weight: 900;
+    color: blue;
+}
+.btn span{
+    position: absolute;
+    border-radius: 10vh;
+    inset: 0.4vh;
+    border :1vh solid greenyellow;
+    filter: blur(0.8vh);
+}
+.btn:hover{
+    cursor: pointer;
+    left: 88vh;
+    height: 11vh;
+    width: 35vh;
+    font-size: 7vh;
+}
+
+.main-div{
+    position: absolute;
+    width: 60%;
+    padding: 2vh 6vh;
+    top: 25vh;
+    left: 40vh;
+    font-size: 3rem;
+    background-color: rgba(0, 255, 242, 0.225);
+    border-radius: 8vh;
+}
+.inner-div li{
+    margin-top: 2vh;
+    list-style: none;
+    margin-bottom: 4vh;
+}
+input[type=radio] {
+    border: 0px;
+    width: 4%;
+    height: 1.6em;
+}
+#submit, .btn{
+    display: block;
+    margin: auto;
+    height: 3rem;
+    width: 15rem;
+    box-shadow: inset 0 0 40px rgb(13, 0, 255);
+    border:rgb(47,224,255);
+    border-radius: 10vh;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5vh;
+    font-weight: 900;
+    color: blue;
+}
+#submit, .btn:hover{
+    cursor: pointer;
+}
