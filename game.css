@@ -108,43 +108,62 @@
         right: 203vh;
     }
 }
-#startButton a{
-    text-decoration: none;
-}
-#ready h1{
+
+#main-div{
+    display:block;
     position: absolute;
-    top: 35vh;
-    left: 75vh;
-    font-family:'Dancing Script', cursive;
-    font-weight: 900;
-    font-size: 5rem;
-    color: rgb(255, 255, 255);
+    width: 60%;
+    padding: 2vh 6vh;
+    top: 20vh;
+    left: 40vh;
+    font-size: 3rem;
+    background-color: rgba(0, 255, 242, 0.225);
+    border-radius: 8vh;
 }
-#startButton{
-    position: absolute;
-    top: 50vh;
-    left: 90vh;
-    height: 9vh;
-    width: 30vh;
+.inner-div li{
+    margin-top: 2vh;
+    list-style: none;
+    margin-bottom: 4vh;
+}
+input[type=radio] {
+    border: 0px;
+    width: 4%;
+    height: 1.6em;
+}
+#submit{
+    height: 5rem;
+    width: 15rem;
     box-shadow: inset 0 0 40px rgb(13, 0, 255);
     border:rgb(47,224,255);
     border-radius: 10vh;
     font-family: 'Dancing Script', cursive;
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: 900;
     color: blue;
 }
-#startButton span{
-    position: absolute;
-    border-radius: 10vh;
-    inset: 0.4vh;
-    border :1vh solid greenyellow;
-    filter: blur(0.8vh);
-}
-#startButton:hover{
+#submit:hover{
     cursor: pointer;
-    left: 88vh;
-    height: 11vh;
-    width: 35vh;
-    font-size: 7vh;
+}
+#showScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 242, 0, 0.456);
+    
+}
+.scoreArea{
+    display: none;;
+}
+#showScore .btn{
+    top: 28rem;
+    right: -5rem;
+    height: 4rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    width: 15rem;
+    box-shadow: inset 0 0 40px rgb(13, 0, 255);
+    border:rgb(47,224,255);
+    border-radius: 10vh;
+    font-weight: 900;
+    color: blue;
 }
