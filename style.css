@@ -19,22 +19,19 @@
     background : url(Img/fish3.png);
     background-size: cover;
     position: absolute;
-    height: 23vh;
-    width: 30vh;
+    height: 35vh;
+    width: 50vh;
     top: 2vh;
     right: 2vh;
-    animation: fishanimate1 25s infinite;
-    animation-delay: 4s;
+    animation: fishanimate1 2s infinite;
 }
 .fish2{
     background : url(Img/fish2.png);
     background-size: cover;
     position: absolute;
-    height: 20vh;
+    height: 35vh;
     width: 38vh;
-  /*  top: 65vh;
-    right: 2vh;*/
-    animation: fishanimate2 25s infinite;
+    animation: fishanimate2 2s infinite;
 }
 .bubble1{
     background: url(Img/bubble1.png);
@@ -88,24 +85,26 @@
 
 @keyframes fishanimate1
 {
-    0%{
-        right: 0vh;
+    0%,100%{
+        top: 50vh;
+        right: 20vh;
     }
-    100%{
-        right: 203vh;
-        top: 30vh;
+    50%{
+        right: 20vh;
+        top: 40vh;;
     }
+
 }
 @keyframes fishanimate2
 {
     
-    0%{
-        top: 65vh;
-        right: 0vh;
+    0%,100%{
+        top: 55vh;
+        right: 140vh;
     }
-    100%{
-        top: 65vh;
-        right: 203vh;
+    50%{
+        top: 55vh;
+        right: 150vh;
     }
 }
 #startButton a{

@@ -1,34 +1,34 @@
 const quiz = [
     {
         question:"Q1. What is your name?",
-        a: "BSDK",
-        b:"MC",
-        c:"bh k chdo",
-        d:"Priya",
+        a: "BK",
+        b:"M",
+        c:"bo",
+        d:"P",
         ans:"ans3"
     },
     {
         question:"Q2. What is your 2nd name?",
-        a: "BSDK",
-        b:"MC",
-        c:"bh k chdo",
-        d:"Priya",
+        a: "B",
+        b:"M",
+        c:"bdo",
+        d:"Pa",
         ans:"ans3"
     },
     {
         question:"Q3. What is your 3rd name?",
-        a: "BSDK",
-        b:"MC",
-        c:"bh k chdo",
-        d:"Priya",
+        a: "BK",
+        b:"M",
+        c:"hdo",
+        d:"ya",
         ans:"ans3"
     },
     {
         question:"Q4. What is your 4th name?",
-        a: "BSDK",
-        b:"MC",
-        c:"bh k chdo",
-        d:"Priya",
+        a: "K",
+        b:"C",
+        c:"bo",
+        d:"Pa",
         ans:"ans3"
     }
 ];
@@ -90,12 +90,11 @@ submit.addEventListener('click',()=>{
         showScore.innerHTML = `
         <h3> You saved ${score}/${quiz.length} fishes!</h3>`
         submit.innerText = "Play Again ;)";
-        submit.addEventListener('click',()=>{
-            location.reload();
-        });
-    
-        
         showScore.display= "flex"; 
+
+        submit.addEventListener('click',()=>{
+            window.location.href = "index.html";
+        });
     }
 });
 
