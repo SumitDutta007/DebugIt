@@ -19,27 +19,24 @@
     background : url(Img/fish3.png);
     background-size: cover;
     position: absolute;
-    height: 35vh;
-    width: 50vh;
-    top: 2vh;
-    right: 2vh;
+    height: 17rem;
+    width: 25rem;
     animation: fishanimate1 2s infinite;
 }
 .fish2{
     background : url(Img/fish2.png);
     background-size: cover;
     position: absolute;
-    height: 35vh;
-    width: 38vh;
+    height: 17rem;
+    width: 18rem;
     animation: fishanimate2 2s infinite;
 }
 .bubble1{
     background: url(Img/bubble1.png);
     background-size: cover;
     position: absolute;
-    height: 21vh;
-    width: 22.4vh;
-    top: 0;
+    height: 10.2rem;
+    width: 11rem;
     left: 40vh;
     opacity: 0.6;
     animation: bubbleanimate1 20s infinite;
@@ -48,9 +45,8 @@
     background: url(Img/bubble2.png);
     background-size: cover;
     position: absolute;
-    height: 23.5vh;
-    width: 25vh;
-    top: 0;
+    height: 11rem;
+    width: 12rem;
     right: 22vh;
     opacity: 0.8;
     animation: bubbleanimate2 20s infinite;
@@ -60,25 +56,25 @@
 @keyframes bubbleanimate1
 {
     0%{
-        top: 0px;
+        top: 0;
     }
     50%{
-        top: 76vh;
+        top: 37rem;
     }
     100%{
-        top: 0px;
+        top: 0;
     }
 }
 @keyframes bubbleanimate2
 {
     0%{
-        top: 76vh;
+        top: 36rem;
     }
     50%{
         top: 0;
     }
     100%{
-        top: 76vh;
+        top: 36rem;
     }
    
 }
@@ -86,12 +82,12 @@
 @keyframes fishanimate1
 {
     0%,100%{
-        top: 50vh;
-        right: 20vh;
+        top: 25rem;
+        right: 10rem;
     }
     50%{
-        right: 20vh;
-        top: 40vh;;
+        right: 10rem;
+        top: 20rem;
     }
 
 }
@@ -99,12 +95,12 @@
 {
     
     0%,100%{
-        top: 45vh;
-        right: 140vh;
+        top: 22rem;
+        right: 70rem;
     }
     50%{
-        top: 45vh;
-        right: 150vh;
+        top: 22rem;
+        right: 75rem;
     }
 }
 #startButton a{
@@ -112,8 +108,8 @@
 }
 #ready h1{
     position: absolute;
-    top: 25vh;
-    left: 35vh;
+    top: 12rem;
+    left: 15rem;
     font-family:'Dancing Script', cursive;
     font-weight: 900;
     font-size: 5rem;
@@ -121,9 +117,8 @@
 }
 #ready h2{
     position: absolute;
-    top: 40vh;
-    left: 65vh;
-  /*  font-family:'Dancing Script', cursive;*/
+    top: 20rem;
+    left: 27rem;
     font-weight: 900;
     font-size: 2.5rem;
     color: rgb(38, 0, 255);
@@ -131,15 +126,15 @@
 
 #startButton{
     position: absolute;
-    top: 50vh;
-    left: 90vh;
-    height: 9vh;
-    width: 30vh;
-    box-shadow: inset 0 0 40px rgb(13, 0, 255);
+    top: 25rem;
+    left: 40rem;
+    height: 4rem;
+    width: 15rem;
+    box-shadow: inset 0 0 3rem rgb(13, 0, 255);
     border:rgb(47,224,255);
-    border-radius: 10vh;
+    border-radius: 5rem;
     font-family: 'Dancing Script', cursive;
-    font-size: 6vh;
+    font-size: 3rem;
     font-weight: 900;
     color: blue;
 }
@@ -152,8 +147,8 @@
 }
 #startButton:hover{
     cursor: pointer;
-    left: 88vh;
-    height: 11vh;
-    width: 35vh;
-    font-size: 7vh;
+    left: 44rem;
+    height: 5rem;
+    width: 17rem;
+    font-size: 4rem;
 }
