@@ -131,6 +131,10 @@
     background-color: rgba(0, 255, 242, 0.225);
     border-radius: 8vh;
 }
+
+.inner-div h3{
+    display: block;
+}
 .inner-div li{
     margin-top: 2vh;
     list-style: none;
@@ -155,6 +159,12 @@ input[type=radio] {
 #submit:hover{
     cursor: pointer;
 }
+#remark{
+    display: flex;
+    justify-content: center;
+   background-color: rgba(240, 248, 255, 0.464);
+}
+
 #showScore{
     display: flex;
     justify-content: center;
@@ -163,7 +173,7 @@ input[type=radio] {
     
 }
 .scoreArea{
-    display: none;;
+    display: none;
 }
 #showScore .btn{
     top: 28rem;

@@ -42,8 +42,14 @@ const submit=document.querySelector('#submit');
 const Submit = document.getElementsByClassName(".buton");
 const answers = document.querySelectorAll('.answer');
 const showScore = document.querySelector('#showScore');
+const remark=document.getElementById('remark');
+const ticks=document.getElementById('ticks');
 
-let buton=document.getElementsByClassName(".buton");
+const images={
+    correct:"Img/correct.png",
+    incorrect:"Img/incorrect.png"
+};
+let imageSrc = images.incorrect;
 
 let questionNumber = 0;
 let score = 0;
@@ -80,21 +86,45 @@ submit.addEventListener('click',()=>{
     if(checkedAnswer === quiz[questionNumber].ans)
     {
         score++;
-    };
+        imageSrc = images.correct;
+    }
+    else{
+        imageSrc = images.incorrect;
+    }
+    const imgElement = document.createElement("img");
+    imgElement.src = imageSrc;
+    imgElement.style.height="9vh";
+    ticks.appendChild(imgElement);
+    
+
     questionNumber++;
     deselectAll();
-    if(questionNumber < quiz.length){
+    if(questionNumber < quiz.length-1){
+        loadQuestion();
+    }
+    else if(questionNumber === quiz.length-1){
+        submit.innerText = "SUBMIT";
         loadQuestion();
     }
     else{
+        document.getElementsByTagName("ul")[0].style.display="none";
+        document.getElementsByTagName("h3")[0].style.display = "none";
+        const imgElement2=document.createElement("img");
+        imgElement2.src = "Img/win.png";
+        imgElement2.style.height="45vh";
+        imgElement2.style.width = "45vh";
+        remark.appendChild(imgElement2);
+        remark.style.display = "flex";
+        ticks.style.display="flex";
+        ticks.style.flexDirection="column";
+        showScore.display= "block";
+        showScore.margin = "auto";
         showScore.innerHTML = `
-        <h3> You saved ${score}/${quiz.length} fishes!</h3>`
-        submit.innerText = "Play Again ;)";
-        showScore.display= "flex"; 
+        <h2> You saved ${score}/${quiz.length} fishes!</h2>`
+        submit.innerText = "Play Again :)"; 
 
         submit.addEventListener('click',()=>{
             window.location.href = "index.html";
         });
     }
 });
-
