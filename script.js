@@ -32,6 +32,8 @@ const quiz = [
         ans:"ans4"
     }
 ];
+const music = new Audio("music/gameaudio.mp3");
+music.play();
 
 const question = document.querySelector('.question');
 const option1 = document.querySelector('#option1');
@@ -49,6 +51,7 @@ const images={
     correct:"Img/correct.png",
     incorrect:"Img/incorrect.png"
 };
+
 let imageSrc = images.incorrect;
 
 let questionNumber = 0;
@@ -80,6 +83,13 @@ const deselectAll = () =>{
 }
 
 submit.addEventListener('click',()=>{
+    function Exit()
+    {
+    window.location.href="index.html";
+    music.play();
+    }
+    window.onbeforeunload = Exit;
+
     const checkedAnswer = getCheckedAnswer();
     console.log(checkedAnswer);
 
