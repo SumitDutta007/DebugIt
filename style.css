@@ -147,8 +147,5 @@
 }
 #startButton:hover{
     cursor: pointer;
-    left: 44rem;
-    height: 5rem;
-    width: 17rem;
-    font-size: 4rem;
+    transform: scale(1.1);
 }
