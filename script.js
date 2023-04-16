@@ -1,3 +1,4 @@
+//Loading Questions
 const quiz = [
     {
         question:"Q1. If 1=3, 2=3, 3=5, 4=4, 5=4, Then 6=?",
@@ -32,9 +33,11 @@ const quiz = [
         ans:"ans4"
     }
 ];
+//Playing Music
 const music = new Audio("music/gameaudio.mp3");
 music.play();
 
+//storing the html css elements
 const question = document.querySelector('.question');
 const option1 = document.querySelector('#option1');
 const option2 = document.querySelector('#option2');
@@ -51,6 +54,7 @@ const question2 = document.getElementById('question2');
 const question3 = document.getElementById('question3');
 const question4 = document.getElementById('question4');
 
+//Remarks for result page
 const images={
     correct:"Img/correct.png",
     incorrect:"Img/incorrect.png"
@@ -61,6 +65,7 @@ let imageSrc = images.incorrect;
 let questionNumber = 0;
 let score = 0;
 
+//showing next question and options
 const loadQuestion = () =>{
     const questionList = quiz[questionNumber];
     question.innerText = questionList.question;
@@ -72,6 +77,7 @@ const loadQuestion = () =>{
 
 loadQuestion();
 
+//getting the user input answer
 const getCheckedAnswer = ()=>{
     let  answer;
     answers.forEach((curAnsElem)=>{
@@ -82,18 +88,22 @@ const getCheckedAnswer = ()=>{
     return answer;
 };
 
+//clearing the option marked for next question 
 const deselectAll = () =>{
     answers.forEach((curAnsElem) => curAnsElem.checked = false);
 }
 
+//adding EventListener to button
 submit.addEventListener('click',()=>{
+    //adding refresh location to index.html
     function Exit()
     {
     window.location.href="index.html";
     music.play();
     }
     window.onbeforeunload = Exit;
-
+    
+    //checking whether user input answer is correct or wrong
     const checkedAnswer = getCheckedAnswer();
     console.log(checkedAnswer);
 
@@ -109,6 +119,7 @@ submit.addEventListener('click',()=>{
     imgElement.src = imageSrc;
     imgElement.style.height="9vh";
     imgElement.style.marginLeft="9rem";
+    //Adding remark images beside each question in result page
     if(questionNumber===0)
     {
         question1.appendChild(imgElement);
@@ -131,6 +142,7 @@ submit.addEventListener('click',()=>{
         submit.innerText = "SUBMIT";
         loadQuestion();
     }
+    //SHOWING RESULTS PAGE
     else{
         document.getElementsByTagName("ul")[0].style.display="none";
         document.getElementsByTagName("h3")[0].style.display = "none";
