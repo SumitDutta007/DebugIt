@@ -16,4 +16,4 @@ You can either run the game online at [LearningMadeFun](sumitdutta007.github.io/
 
 Running along with classes and exams approaching and the time constraint , I did my best but there are still things that can be done :
 * Use `JSON` to store the name , score , class in `localStorage` as a Leaderboard tablet.
-* Add various classes for kids studying in different classes along with other subjects too and add more features like Explanation tab & Leaderboard .
+* Add various classes for kids studying in different classes along with other subjects added too .
