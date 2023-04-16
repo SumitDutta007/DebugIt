@@ -149,3 +149,8 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+#ready .super-hero{
+    background: url(Img/190-1903766_hero-clipart-little-superhero-kid-superhero-vector-removebg-preview.png);
+    height: 23.6rem;
+    width: 24rem;
+}
