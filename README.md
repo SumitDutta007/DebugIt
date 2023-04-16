@@ -12,6 +12,6 @@ You can either run the game online at [LearningMadeFun](sumitdutta007.github.io/
 * CSS to provide the skin and visual appeal.
 * Javascript to provide the brain.
 
-# Scope and Improvements ###(since nothing is perfect in this world!)
+<h1> Scope and Improvements</h1> <h3>(since nothing is perfect in this world!)</h3>
 * Use `JSON` to store the name , score , class in `localStorage` as a Scoreboard.
 * Add various classes for kids studying in different classes along with othr subjects too.
