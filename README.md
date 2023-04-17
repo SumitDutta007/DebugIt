@@ -5,7 +5,7 @@
 How would you feel as a kid if you could save lives by answering some fun tricky questions and become a Hero ! This is an attemp to do the same with some fancy cartoonic animations for the kids so they can play and learn at the same time .
 
 # How to run the game?
-You can either run the game online at [LearningMadeFun](sumitdutta007.github.io/DebugIt/) or you can also clone this repository and then run `index.html` in your web browser. No need for any fancy installations!
+You can either run the game online at [LearningMadeFun](https://sumitdutta007.github.io/DebugIt/) or you can also clone this repository and then run `index.html` in your web browser. No need for any fancy installations!
 
 # Tech Stack
 * HTML to provide the skeleton for the web-page.
