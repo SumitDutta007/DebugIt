@@ -50,25 +50,7 @@ const question1 = document.getElementById('question1');
 const question2 = document.getElementById('question2');
 const question3 = document.getElementById('question3');
 const question4 = document.getElementById('question4');
-const icon = document.querySelector('#icon');
-const settingsText=document.getElementById('settingsText');
-const yes = document.querySelector('#yes');
-const no = document.querySelector('#no');
 
-icon.addEventListener('click',()=>{
-    settingsText.style.display = "flex";
-    document.getElementById('settings').style.background = "rgba(255, 255, 255, 0.519)";
-})
-yes.addEventListener('click',()=>{
-    music.play();
-    settingsText.style.display = "none";
-    document.getElementById('settings').style.background = "none";
-})
-no.addEventListener('click',()=>{
-    music.pause();
-    settingsText.style.display = "none";
-    document.getElementById('settings').style.background = "none";
-})
 
 const images={
     correct:"Img/correct.png",
