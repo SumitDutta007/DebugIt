@@ -1,0 +1,31 @@
+/*Between medium sized Phone and pc*/
+@media (max-width: 1434px){
+
+    #ready{
+        padding-top: 4rem;
+    }
+    #ready h1{
+        font-size: 4rem;
+        margin: 0;
+    }
+    #ready h2{
+        margin: 0;
+        font-size: 2rem;
+        color: rgb(0, 0, 255);
+    }
+
+    .bubble1{
+        left: 35vh;
+    }
+    .bubble2{
+        display: none;
+    }
+    .fish1{
+        display: none;
+    }
+    .fish2{
+        display: none;
+    }
+
+}
+/*Phone*/

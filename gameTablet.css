@@ -1,0 +1,103 @@
+@media(max-width : 1434px){
+    .victoryFish{
+        position: relative;
+        height: 35vh;
+    }
+    .victoryFish::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(Img/win.png);
+        background-size: cover;
+        height: 35vh;
+        width: 35vh;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .fish1{
+        animation: fishanimate1 10s infinite;
+    }
+    .fish2{
+        animation: fishanimate2 10s infinite;
+    }
+    .bubble2{
+        right: 45vh;
+    }
+    @keyframes fishanimate1
+    {
+        0%{
+            right: 0vh;
+        }
+        100%{
+            right: 67vh;
+            top: 30vh;
+        }
+    }
+    @keyframes fishanimate2
+    {
+        
+        0%{
+            top: 55vh;
+            right: 0vh;
+        }
+        20%{
+            top: 45vh;
+        }
+        40%{
+            top: 55vh;
+        }
+        60%{
+            top: 45vh;
+        }
+        80%{
+            top: 55vh;
+        }
+        100%{
+            top: 45vh;
+            right: 67vh;
+        }
+    }
+
+    
+    #main-div{
+        display: block;
+        left: 8vh;
+        padding: 1vh 6vh;
+        font-size: 1.5rem;
+    }
+    #Questions{
+        grid-template-columns: 6rem 6rem 1rem;
+        grid-template-rows: 5rem 5rem 5rem;
+        font-size: 1.5rem;
+    }
+    #rquestion1 img{
+        height: 4vh;
+    }
+    #rquestion2 img{
+        height: 4vh;
+    }
+
+    #rquestion3 img{
+        height: 4vh;
+    }
+
+    #rquestion4 img{
+        height: 4vh;
+    }
+    #save{
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    #submit{
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width:420px){
+    #main-div{
+        font-size: 1.4rem;
+    }
+}
