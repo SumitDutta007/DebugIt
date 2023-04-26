@@ -29,3 +29,11 @@
 
 }
 /*Phone*/
+@media(max-width:420px){
+    .bubble1{
+        left: 25vh;
+    }
+    .super-hero{
+        width: 21rem;
+    }
+}
