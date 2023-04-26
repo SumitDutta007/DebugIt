@@ -5,10 +5,12 @@
         padding-top: 4rem;
     }
     #ready h1{
+        padding: 10px;
         font-size: 4rem;
         margin: 0;
     }
     #ready h2{
+        padding: 10px;
         margin: 0;
         font-size: 2rem;
         color: rgb(0, 0, 255);

@@ -275,3 +275,8 @@ input[type=radio] {
 #rquestion4 img{
     height: 9vh;
 }
+.victory{
+    background: url(Img/win.png);
+    background-size: cover;
+    height: 18rem;
+}

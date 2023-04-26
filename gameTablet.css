@@ -57,18 +57,18 @@
         font-size: 1.5rem;
     }
     #rquestion1 img{
-        height: 4vh;
+        height: 5.5vh;
     }
     #rquestion2 img{
-        height: 4vh;
+        height: 5.5vh;
     }
 
     #rquestion3 img{
-        height: 4vh;
+        height: 5.5vh;
     }
 
     #rquestion4 img{
-        height: 4vh;
+        height: 5.5vh;
     }
     #submit{
         height: 3rem;
@@ -78,12 +78,41 @@
 
 }
 
-@media(max-width:420px){
+@media screen and (max-width:420px){
+    #icon{
+        height: 2rem;
+        width: 2rem;
+    }
     #main-div{
         font-size: 1.4rem;
     }
     .bubble1{
         left: 25vh;
     }
+    #rquestion1 img{
+        height: 5vh;
+    }
+    #rquestion2 img{
+        height: 5vh;
+    }
 
+    #rquestion3 img{
+        height: 5vh;
+    }
+
+    #rquestion4 img{
+        height: 5vh;
+    }
+
+}
+@media screen and (max-width:378px){
+    #main-div{
+        width: 58%;
+        font-size: 1.3rem;
+    }
+    #Questions{
+        grid-template-columns: 7rem 4rem 1rem;
+        grid-template-rows: 5rem 5rem 5rem;
+        font-size: 1.5rem;
+    }
 }
