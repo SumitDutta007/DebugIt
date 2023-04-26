@@ -130,3 +130,14 @@
         font-size:1.1rem;
     }
 }
+@media(max-width:346px){
+    #main-div{
+        left: 2vh;
+    }
+    .bubble1{
+        left: 10vh;
+    }
+    #submit{
+        width: 29vh;
+    }
+}
