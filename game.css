@@ -163,8 +163,8 @@
     display:block;
     position: absolute;
     width: 60%;
-    padding: 2vh 6vh;
-    top: 20vh;
+    padding: 1vh 6vh;
+    top: 16vh;
     left: 40vh;
     font-size: 2rem;
     background-color: rgba(0, 255, 242, 0.225);
@@ -186,13 +186,13 @@ input[type=radio] {
 }
 #submit{
     display: block;
-    height: 5rem;
+    height: 4rem;
     width: 15rem;
     box-shadow: inset 0 0 40px rgb(13, 0, 255);
     border:rgb(47,224,255);
     border-radius: 10vh;
     font-family: 'Dancing Script', cursive;
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 900;
     color: blue;
 }
@@ -201,9 +201,10 @@ input[type=radio] {
 }
 #remark{
     display: flex;
+    position:relative;
     justify-content: center;
-   background-color: rgba(240, 248, 255, 0.464);
-   box-shadow:  3rem 3 rem  2% 2rem blue;
+    background-color: rgba(240, 248, 255, 0.464);
+    box-shadow:  0.5rem 0.5rem 0.5rem  rgb(140, 140, 228);
 }
 
 #showScore{
@@ -216,16 +217,66 @@ input[type=radio] {
 .scoreArea{
     display: none;
 }
-#showScore .btn{
-    top: 28rem;
-    right: -5rem;
-    height: 4rem;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    width: 15rem;
-    box-shadow: inset 0 0 40px rgb(13, 0, 255);
-    border:rgb(47,224,255);
-    border-radius: 10vh;
-    font-weight: 900;
-    color: blue;
+
+
+#Questions{
+    display: grid;
+    grid-template-columns: 20rem 20rem 16rem;
+    grid-template-rows: 5rem 5rem 5rem;
+}
+
+#question1{
+
+    display: flex;
+    justify-content: right;
+
+}
+#question2{
+
+    display: flex;
+    justify-content: right;
+}
+#question3{
+
+    display: flex;
+    justify-content: right;
+}
+#question4{
+    display: flex;
+    justify-content: right;
+}
+#rquestion1{
+    display: flex;
+    justify-content: center;
+}
+#rquestion1 img{
+    height: 9vh;
+
+}
+#rquestion2{
+    display: flex;
+    justify-content: center;
+}
+#rquestion2 img{
+    height: 9vh;
+}
+#rquestion3{
+    display: flex;
+    justify-content: center;
+}
+#rquestion3 img{
+    height: 9vh;
+}
+#rquestion4{
+    display: flex;
+    justify-content: center;
+}
+#rquestion4 img{
+    height: 9vh;
+}
+
+.victory{
+    background: url(Img/win.png);
+    background-size: cover;
+    height: 18rem;
 }

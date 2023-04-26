@@ -33,7 +33,7 @@ const quiz = [
     }
 ];
 const music = new Audio("music/gameaudio.mp3");
-music.play();
+//music.play();
 
 const question = document.querySelector('.question');
 const option1 = document.querySelector('#option1');
@@ -46,10 +46,10 @@ const answers = document.querySelectorAll('.answer');
 const showScore = document.querySelector('#showScore');
 const remark=document.getElementById('remark');
 const ticks=document.getElementById('ticks');
-const question1 = document.getElementById('question1');
-const question2 = document.getElementById('question2');
-const question3 = document.getElementById('question3');
-const question4 = document.getElementById('question4');
+const rquestion1 = document.getElementById('rquestion1');
+const rquestion2 = document.getElementById('rquestion2');
+const rquestion3 = document.getElementById('rquestion3');
+const rquestion4 = document.getElementById('rquestion4');
 const icon = document.querySelector('#icon');
 const settingsText=document.getElementById('settingsText');
 const yes = document.querySelector('#yes');
@@ -125,20 +125,19 @@ submit.addEventListener('click',()=>{
     }
     const imgElement = document.createElement("img");
     imgElement.src = imageSrc;
-    imgElement.style.height="9vh";
-    imgElement.style.marginLeft="9rem";
+
     if(questionNumber===0)
     {
-        question1.appendChild(imgElement);
+        rquestion1.appendChild(imgElement);
     }
     else if(questionNumber===1){
-        question2.appendChild(imgElement);
+        rquestion2.appendChild(imgElement);
     }    
     else if(questionNumber===2){
-        question3.appendChild(imgElement);
+        rquestion3.appendChild(imgElement);
     }
     else if(questionNumber===3){
-        question4.appendChild(imgElement);
+        rquestion4.appendChild(imgElement);
     } 
     questionNumber++;
     deselectAll();
@@ -152,39 +151,13 @@ submit.addEventListener('click',()=>{
     else{
         document.getElementsByTagName("ul")[0].style.display="none";
         document.getElementsByTagName("h3")[0].style.display = "none";
-        document.getElementById("Questions").style.display="flex";
-        document.getElementById("Questions").style.flexDirection="column";
 
-        document.getElementById("question1").style.display="flex";
-        document.getElementById("question1").style.justifyContent="center";
-        document.getElementById("question1").style.alignItems="center";
-        document.getElementById("question1").style.marginBottom="3rem";
-
-        document.getElementById("question2").style.display="flex";
-        document.getElementById("question2").style.justifyContent="center";
-        document.getElementById("question2").style.alignItems="center";
-        document.getElementById("question2").style.marginBottom="3rem";
-
-        document.getElementById("question3").style.display="flex";
-        document.getElementById("question3").style.justifyContent="center";
-        document.getElementById("question3").style.alignItems="center";
-        document.getElementById("question3").style.marginBottom="3rem";
-
-        document.getElementById("question4").style.display="flex";
-        document.getElementById("question4").style.justifyContent="center";
-        document.getElementById("question4").style.alignItems="center";
-
-        const imgElement2=document.createElement("img");
-        imgElement2.src = "Img/win.png";
-        imgElement2.style.height="45vh";
-        imgElement2.style.width = "45vh";
-        remark.appendChild(imgElement2);
         remark.style.display = "flex";
         showScore.display= "block";
         showScore.margin = "auto";
         showScore.innerHTML = `
         <h2> You saved ${score}/${quiz.length} fishes!</h2>`
-        submit.innerText = "Play Again :)"; 
+        submit.innerText = "Play Again :)";
         submit.style.margin="auto";
 
         submit.addEventListener('click',()=>{

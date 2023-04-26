@@ -4,13 +4,10 @@
 }
 .container{
     position: relative;
-    height: 100%;
     width: 100%;
     background: url(Img/sea.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
     opacity: 0.7;
 }
 
@@ -122,10 +119,10 @@
 {
     0%,100%{
         top: 25rem;
-        right: 10rem;
+        right: 4rem;
     }
     50%{
-        right: 10rem;
+        right: 4rem;
         top: 20rem;
     }
 
@@ -183,7 +180,7 @@
 }
 #startButton span{
     position: absolute;
-    border-radius: 10vh;
+    border-radius: 5rem;
     inset: 0.4vh;
     border :1vh solid greenyellow;
     filter: blur(0.8vh);
@@ -192,8 +189,9 @@
     cursor: pointer;
     transform: scale(1.1);
 }
-#ready .super-hero{
+.super-hero{
     background: url(Img/190-1903766_hero-clipart-little-superhero-kid-superhero-vector-removebg-preview.png);
     height: 23.6rem;
     width: 24rem;
+    margin: auto;
 }

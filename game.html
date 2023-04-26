@@ -8,62 +8,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script:wght@700&family=Fasthand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="gamePhone.css">
     <title>Quiz</title>
 </head>
 <body>
-    <div class="sea">
-        <div id="settings">
-            <div id="settingsIcon">
-                <img src="Img/settings-removebg-preview.png" alt="" id="icon">
-            </div>
-            <div id="settingsText">
-                Play Music
-                <button id="yes">YES</button>
-                <button id="no">NO</button>
-            </div>
-        </div>
-        <div class="fishes">
-            <div class="fish1">
-            </div>
-            <div class="fish2"></div>
-        </div>
-        <div class="bubbles">
-            <div class="bubble1"></div>
-            <div class="bubble2"></div>
-        </div>
-    </div>
-
-    <div id="main-div">
-        <div class="inner-div">
-            <h3 class="question">Question comes here</h3>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="ans1" class="answer">
-                    <label for="ans1" id="option1">Answer Option</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="ans2" class="answer">
-                    <label for="ans2" id="option2">Answer Option</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="ans3" class="answer">
-                    <label for="ans3" id="option3">Answer Option</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="ans4" class="answer">
-                    <label for="ans4" id="option4">Answer Option</label>
-                </li>
-            </ul>
-            <div id="remark" style="display:none">
-                <div id="Questions">
-                    <div id="question1">Question1.</div>
-                    <div id="question2">Question2.</div>
-                    <div id="question3">Question3.</div>
-                    <div id="question4">Question4.</div>
+    <div class="container">
+        <div class="sea">
+            <div id="settings">
+                <div id="settingsIcon">
+                    <img src="Img/settings-removebg-preview.png" alt="" id="icon">
+                </div>
+                <div id="settingsText">
+                    Play Music
+                    <button id="yes">YES</button>
+                    <button id="no">NO</button>
                 </div>
             </div>
-            <div id="showScore" class ="scoreArea"></div>
-            <button id="submit">Next</button>
+            <div class="fishes">
+                <div class="fish1">
+                </div>
+                <div class="fish2"></div>
+            </div>
+            <div class="bubbles">
+                <div class="bubble1"></div>
+                <div class="bubble2"></div>
+            </div>
+        </div>
+    
+        <div id="main-div">
+            <div class="inner-div">
+                <h3 class="question">Question comes here</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="ans1" class="answer">
+                        <label for="ans1" id="option1">Answer Option</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans2" class="answer">
+                        <label for="ans2" id="option2">Answer Option</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans3" class="answer">
+                        <label for="ans3" id="option3">Answer Option</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans4" class="answer">
+                        <label for="ans4" id="option4">Answer Option</label>
+                    </li>
+                </ul>
+                <div id="remark" style="display:none">
+                    <div id="Questions">
+                        <div id="question1">Question1.</div>
+                        <div id="rquestion1"></div>
+                        <div class = "victory"></div>
+                        <div id="question2">Question2.</div>
+                        <div id="rquestion2"></div>
+                        <div></div>
+                        <div id="question3">Question3.</div>
+                        <div id="rquestion3"></div>
+                        <div></div>
+                        <div id="question4">Question4.</div>
+                        <div id="rquestion4"></div>
+                    </div>
+                </div>
+                <div id="showScore" class ="scoreArea"></div>
+
+                <button id="submit">Next</button>
+            </div>
         </div>
     </div>
     
