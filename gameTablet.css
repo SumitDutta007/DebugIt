@@ -75,6 +75,14 @@
         font-size: 1.4rem;
         box-shadow: inset 0 0 30px rgb(13, 0, 255);
     }
+    .victoryFish{
+        position: absolute;
+        background: url(Img/win.png);
+        background-size: cover;
+        height: 17rem;
+        width: 17rem;
+        opacity: 0.3;
+    }
 
 }
 
@@ -114,5 +122,11 @@
         grid-template-columns: 7rem 4rem 1rem;
         grid-template-rows: 5rem 5rem 5rem;
         font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:363px){
+    #main-div{
+        left: 5vh;
+        font-size:1.1rem;
     }
 }
