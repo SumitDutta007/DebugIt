@@ -20,6 +20,5 @@ You can either run the game online at [LearningMadeFun](sumitdutta007.github.io/
 
 <h1>Scope and Improvements</h1> <h3>(since nothing is perfect in this world!)</h3>
 
-Running along with classes and exams approaching and the time constraint , I did my best but there are still things that can be done :
 * Use api to fetch more questions for different classes/levels and for different subjects .
 * Add various classes for kids studying in different classes along with other subjects added too .
