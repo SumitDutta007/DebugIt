@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+}
+.sea{
+    display: block;
+    position: relative;
+    background: url(Img/sea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#settings{
+    z-index: 3;
+    position: absolute;
+    right: 0rem;
+    width: 20rem;
+    height: 8rem;
+}
+#settingsIcon{
+    text-align: right;
+}
+#icon{
+    height: 3rem;
+    width: 3rem;
+}
+#icon:hover{
+    cursor: pointer;
+}
+#settingsText{
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+#settingsText button{
+
+    width: 3rem;
+    height: 1.5rem;
+}
+#settingsText button:hover{
+    cursor: pointer;
+}
+
+#yes{
+    margin-left: 2rem;
+}
+#no{
+    margin-left: 3rem ;
+}
+
+.fish1{
+    background : url(Img/fish3.png);
+    background-size: cover;
+    position: absolute;
+    height: 23vh;
+    width: 33vh;
+    top: 2vh;
+    right: 2vh;
+    animation: fishanimate1 30s infinite;
+    animation-delay: 2s;
+}
+.fish2{
+    background : url(Img/magikarp.png);
+    background-size: cover;
+    position: absolute;
+    height: 45vh;
+    width: 50vh;
+
+    animation: fishanimate2 25s ease-in infinite;
+}
+.bubble1{
+    background: url(Img/bubble1.png);
+    background-size: cover;
+    position: absolute;
+    height: 21vh;
+    width: 22.4vh;
+    top: 0;
+    left: 40vh;
+    opacity: 0.6;
+    animation: bubbleanimate1 20s infinite;
+}
+.bubble2{
+    background: url(Img/bubble2.png);
+    background-size: cover;
+    position: absolute;
+    height: 23.5vh;
+    width: 25vh;
+    top: 0;
+    right: 22vh;
+    opacity: 0.8;
+    animation: bubbleanimate2 20s infinite;
+}
+
+
+@keyframes bubbleanimate1
+{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 76vh;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@keyframes bubbleanimate2
+{
+    0%{
+        top: 76vh;
+    }
+    50%{
+        top: 0;
+    }
+    100%{
+        top: 76vh;
+    }
+   
+}
+
+@keyframes fishanimate1
+{
+    0%{
+        right: 0vh;
+    }
+    100%{
+        right: 203vh;
+        top: 30vh;
+    }
+}
+@keyframes fishanimate2
+{
+    
+    0%{
+        top: 55vh;
+        right: 0vh;
+    }
+    20%{
+        top: 45vh;
+    }
+    40%{
+        top: 55vh;
+    }
+    60%{
+        top: 45vh;
+    }
+    80%{
+        top: 55vh;
+    }
+    100%{
+        top: 45vh;
+        right: 200vh;
+    }
+}

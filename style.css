@@ -50,7 +50,6 @@
     margin-left: 3rem ;
 }
 
-
 .fish1{
     background : url(Img/fish3.png);
     background-size: cover;
@@ -147,7 +146,6 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
     align-items: center;
     justify-content: center;
 }
@@ -168,6 +166,7 @@
 #startButton{
     position: relative;
     margin: 1rem;
+    margin-top: 4rem;
     height: 4rem;
     width: 15rem;
     box-shadow: inset 0 0 3rem rgb(13, 0, 255);
@@ -189,9 +188,118 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+#highscore{
+    position: relative;
+    height: 4rem;
+    width: 15rem;
+    box-shadow: inset 0 0 3rem rgb(13, 0, 255);
+    border:rgb(47,224,255);
+    border-radius: 5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 900;
+    color: blue;
+}
+#highscore span{
+    position: absolute;
+    border-radius: 5rem;
+    inset: 0.4vh;
+    border :1vh solid greenyellow;
+    filter: blur(0.8vh);
+}
+#highscore:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .super-hero{
     background: url(Img/190-1903766_hero-clipart-little-superhero-kid-superhero-vector-removebg-preview.png);
     height: 23.6rem;
     width: 24rem;
     margin: auto;
+}
+#Input{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Input input{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 4vh;
+}
+#Input label{
+    font-size: 40px;
+    color: blue;
+    font-weight: 900;
+    font-style: italic;
+}
+#save{
+    position: relative;
+    margin: 1rem;
+    height: 3.7rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 3rem rgb(13, 0, 255);
+    border:rgb(47,224,255);
+    border-radius: 5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: blue;
+}
+#save span{
+    position: absolute;
+    border-radius: 5rem;
+    inset: 0.4vh;
+    border :1vh solid greenyellow;
+    filter: blur(0.8vh);
+}
+#save:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#scores{
+    padding-bottom: 80.5vh;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table ,th, td{
+    border: 2px solid black;
+}
+#home{
+    position: relative;
+    margin: 1rem;
+    height: 3.7rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 3rem rgb(13, 0, 255);
+    border:rgb(47,224,255);
+    border-radius: 5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: blue;
+}
+#home span{
+    position: absolute;
+    border-radius: 5rem;
+    inset: 0.4vh;
+    border :1vh solid greenyellow;
+    filter: blur(0.8vh);
+}
+#home:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
