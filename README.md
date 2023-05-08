@@ -7,6 +7,12 @@ How would you feel as a kid if you could save lives by answering some fun tricky
 # How to run the game?
 You can either run the game online at [LearningMadeFun](sumitdutta007.github.io/DebugIt/) or you can also clone this repository and then run `index.html` in your web browser. No need for any fancy installations!
 
+#Features
+* Responsive , can be opened in tablet , phone or laptop
+* Has a option to store user's name and score to display in Leaderboard
+* Nice and clean UI
+* Background music and option to mute/unmute .
+
 # Tech Stack
 * HTML to provide the skeleton for the web-page.
 * CSS to provide the skin and visual appeal.
@@ -15,5 +21,5 @@ You can either run the game online at [LearningMadeFun](sumitdutta007.github.io/
 <h1>Scope and Improvements</h1> <h3>(since nothing is perfect in this world!)</h3>
 
 Running along with classes and exams approaching and the time constraint , I did my best but there are still things that can be done :
-* Use `JSON` to store the name , score , class in `localStorage` as a Leaderboard tablet.
+* Use api to fetch more questions for different classes/levels and for different subjects .
 * Add various classes for kids studying in different classes along with other subjects added too .
