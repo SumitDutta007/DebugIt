@@ -33,6 +33,7 @@ const quiz = [
     }
 ];
 const music = new Audio("music/gameaudio.mp3");
+music.play()
 let flag = true;
 
 const question = document.querySelector('.question');
